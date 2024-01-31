@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffff 0%, #d7e1ec 74%);
+}
+
+.wrapper .button {
+  overflow: hidden;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0px 5px;
+  background-color: white;
+  float: left;
+  background-color: #ffffff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button:nth-child(1):hover .icone {
+  background: #4267b2;
+}
+
+.wrapper .button:nth-child(2):hover .icone {
+  background: #1da1f2;
+}
+
+.wrapper .button:nth-child(3):hover .icone {
+  background: #333;
+}
+
+.wrapper .button:nth-child(4):hover .icone {
+  background: #e1306c;
+}
+
+.wrapper .button:nth-child(5):hover .icone {
+  background: #ff0000;
+}
+.wrapper .button .icone {
+  transition: all 0.3s ease-out;
+  text-align: center;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  background-color: rgb(255, 255, 255);
+}
+.wrapper .button .icone i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icone i {
+  color: white;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.wrapper .button:nth-child(1) span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #4267b2;
+}
+
+.wrapper .button:nth-child(2) span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #1da1f2;
+}
+
+.wrapper .button:nth-child(3) span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.wrapper .button:nth-child(4) span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #e1306c;
+}
+
+.wrapper .button:nth-child(5) span {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #ff0000;
+}
